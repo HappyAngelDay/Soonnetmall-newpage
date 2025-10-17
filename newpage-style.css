@@ -688,7 +688,7 @@ header.site {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   gap: 14px;
-  height: 220px;
+  min-eight: 248px;
 }
 
 /* Align the right CTA image to the bottom inside its box */
