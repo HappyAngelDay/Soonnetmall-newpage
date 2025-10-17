@@ -747,13 +747,20 @@ footer a {
     margin: 12px auto 0;
   }
 
-  /* reduce overlap on small screens */
+  /* Dark gallery: switch to responsive grid to avoid overflow */
   .strip {
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    padding: 12px 14px;
+    justify-items: center;
   }
 
   .card-pol {
-    margin-left: -12px;
+    width: 100%;
+    max-width: var(--pol-w, 160px);
+    margin-left: 0;
+    transform: rotate(calc(var(--r) * .85));
   }
 
   .card-pol:first-child {
