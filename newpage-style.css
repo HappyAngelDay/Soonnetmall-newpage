@@ -688,6 +688,7 @@ header.site {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   gap: 14px;
+  height: 220px;
 }
 
 /* Align the right CTA image to the bottom inside its box */
@@ -796,25 +797,33 @@ footer a {
     font-size: 14px;
   }
 
-  /* Dark gallery: arrange 5 photos as 2 / 2 / 1 */
+  /* Dark gallery (mobile): 2 / 2 / 1 with slight overlap and unified frame size */
   .strip {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
     padding: 10px;
     justify-items: center;
   }
   .card-pol {
-    width: 100%;
+    width: var(--pol-w, 170px);
     margin-left: 0;
-    transform: none;
-    padding: 10px 10px 50px;
+    transform: rotate(var(--r));
+    padding: 12px 12px 60px;
+  }
+  /* overlap the second item in each of the first two rows */
+  .strip .card-pol:nth-child(2),
+  .strip .card-pol:nth-child(4) {
+    margin-left: -26px;
+    margin-top: 14px;
+    z-index: 2;
   }
   /* last card spans full row and centers */
   .strip .card-pol:nth-child(5) {
     grid-column: 1 / -1;
     justify-self: center;
-    max-width: 420px;
+    margin-left: 0;
+    z-index: 1;
   }
 }
 
