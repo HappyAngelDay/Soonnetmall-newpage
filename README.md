@@ -1,5 +1,7 @@
 # Soonnetmall New Page
 
+中文 | [English](README.en.md)
+
 簡介（靜態單頁網站）
 
 - 純 HTML + CSS 製作的著陸頁（Landing Page），無任何打包、框架或後端，相容性高、可直接部署。
@@ -15,6 +17,15 @@
 - 服務 CTA 區（Bottom CTA）：兩個行銷 Box（攝手招募、加入會員），含圖文與行動按鈕。
 - 常見問題（FAQ）：可展開/收合的問答清單。
 - 頁尾（Footer）：版權與連結。
+
+預覽（Preview）
+
+<div align="center">
+
+<img src="photo/polaroids-1.jpg" alt="預覽 1" width="360" />
+<img src="photo/polaroids-6.jpg" alt="預覽 2" width="360" />
+
+</div>
 
 目錄結構
 
