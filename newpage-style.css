@@ -771,6 +771,29 @@ footer a {
     flex-basis: 100%;
     text-align: center;
   }
+
+  /* Make AI badge smaller and tilted again on mobile */
+  .ai-badge {
+    left: 8px;
+    bottom: -26px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    transform: rotate(-8deg);
+  }
+  .ai-badge .avatar {
+    width: 46px;
+    height: 46px;
+    border-width: 3px;
+  }
+  .ai-badge .ai-text {
+    font-size: 12px;
+  }
+  .tip-bubble {
+    left: 98px;
+    bottom: -12px;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
 }
 
 /* FAQ section */
