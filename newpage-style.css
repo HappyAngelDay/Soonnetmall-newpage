@@ -690,7 +690,7 @@ header.site {
 }
 
 /* Align the right CTA image to the bottom inside its box */
-.cta-blocks .blocks .block:nth-child(2) img {
+.cta-blocks .blocks .block:nth-child(1) img {
   align-self: end;
 }
 
@@ -756,6 +756,19 @@ footer a {
 
   .card-pol:first-child {
     margin-left: 0;
+  }
+}
+
+/* Mobile tweak: move last hero pill button to next line */
+@media (max-width: 600px) {
+  .hero-pills .pill:last-child {
+    flex-wrap: wrap;
+  }
+  .hero-pills .pill:last-child .go {
+    margin-left: 0;
+    margin-top: 6px;
+    flex-basis: 100%;
+    text-align: center;
   }
 }
 
