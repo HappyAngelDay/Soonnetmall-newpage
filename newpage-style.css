@@ -797,38 +797,38 @@ footer a {
     font-size: 14px;
   }
 
-  /* Dark gallery (mobile): 2 / 2 / 1 with slight overlap and unified frame size */
+  /* Dark gallery (mobile): 3 / 2 layout */
   .strip {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
     padding: 6px;
     justify-items: center;
   }
   .card-pol {
-    width: var(--pol-w, 160px);
+    width: var(--pol-w, 130px);
     margin-left: 0;
     transform: rotate(var(--r));
-    padding: 10px 10px 56px;
+    padding: 8px 8px 46px;
   }
   /* overlap the second item in each of the first two rows */
   .strip .card-pol:nth-child(2),
   .strip .card-pol:nth-child(4) {
-    margin-left: -34px;
-    margin-top: 8px;
-    z-index: 2;
+    margin-left: 0;
+    margin-top: 0;
+    z-index: auto;
   }
   /* pull rows closer */
   .strip .card-pol:nth-child(3) {
-    margin-top: -6px;
+    margin-top: 0;
   }
   /* last card spans full row and centers */
   .strip .card-pol:nth-child(5) {
-    grid-column: 1 / -1;
+    grid-column: auto;
     justify-self: center;
     margin-left: 0;
-    margin-top: -10px;
-    z-index: 1;
+    margin-top: 0;
+    z-index: auto;
   }
 }
 
