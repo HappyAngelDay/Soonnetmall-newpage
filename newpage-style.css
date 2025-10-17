@@ -689,6 +689,11 @@ header.site {
   gap: 14px;
 }
 
+/* Align the right CTA image to the bottom inside its box */
+.cta-blocks .blocks .block:nth-child(2) img {
+  align-self: end;
+}
+
 .block .b-text h3 {
   margin: 0 0 6px;
 }
