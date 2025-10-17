@@ -797,18 +797,19 @@ footer a {
     font-size: 14px;
   }
 
-  /* Dark gallery (mobile): 3 / 2 layout */
+  /* Dark gallery (mobile): 3 / 2 layout, wrap when no space */
   .strip {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 6px;
-    padding: 6px;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 8px;
+    padding: 12px 14px;
     justify-items: center;
   }
   .card-pol {
-    width: var(--pol-w, 130px);
+    width: 100%;
+    max-width: var(--pol-w, 130px);
     margin-left: 0;
-    transform: rotate(var(--r));
+    transform: rotate(calc(var(--r) * .7));
     padding: 8px 8px 46px;
   }
   /* overlap the second item in each of the first two rows */
