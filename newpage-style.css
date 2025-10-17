@@ -761,10 +761,11 @@ footer a {
 
 /* Mobile tweak: move last hero pill button to next line */
 @media (max-width: 600px) {
-  .hero-pills .pill:last-child {
+  /* Apply to all hero pills on small screens */
+  .hero-pills .pill {
     flex-wrap: wrap;
   }
-  .hero-pills .pill:last-child .go {
+  .hero-pills .pill .go {
     margin-left: 0;
     margin-top: 6px;
     flex-basis: 100%;
